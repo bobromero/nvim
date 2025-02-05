@@ -885,8 +885,8 @@ require('lazy').setup({
     opts = {
       transparent = true,
       styles = {
-        sidebars = "transparent",
-        floats = "transparent",
+        sidebars = 'transparent',
+        floats = 'transparent',
       },
     },
     priority = 1000, -- Make sure to load this before all the other start plugins.
