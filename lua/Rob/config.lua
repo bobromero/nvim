@@ -1,6 +1,13 @@
 vim.opt.relativenumber = true
 
 vim.keymap.set('n', '<leader>e', ':Ex<CR>')
+
+vim.keymap.set('n', '<leader>l', '<End>')
+vim.keymap.set('n', '<leader>h', '0')
+
+vim.keymap.set('v', '<leader>l', '<End>')
+vim.keymap.set('v', '<leader>h', '0')
+
 vim.api.nvim_set_hl(0, 'Normal', { bg = 'none' })
 vim.api.nvim_set_hl(0, 'NormalFloat', { bg = 'none' })
 vim.api.nvim_set_hl(0, 'FloatBorder', { bg = 'none' })
