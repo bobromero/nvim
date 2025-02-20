@@ -278,7 +278,7 @@ require('lazy').setup({
         { '<leader>s', group = '[S]earch' },
         { '<leader>w', group = '[W]orkspace' },
         { '<leader>t', group = '[T]oggle' },
-        { '<leader>h', group = 'Git [H]unk', mode = { 'n', 'v' } },
+        { '<leader>H', group = 'Git [H]unk', mode = { 'n', 'v' } },
         { '<leader>e', group = '[E]xit to netrw' },
       },
     },
@@ -943,4 +943,3 @@ require('lazy').setup({
 --
 --
 require 'Rob.config'
-require 'Rob.colorscheme'
