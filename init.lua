@@ -279,7 +279,6 @@ require('lazy').setup({
         { '<leader>w', group = '[W]orkspace' },
         { '<leader>t', group = '[T]oggle' },
         { '<leader>H', group = 'Git [H]unk', mode = { 'n', 'v' } },
-        { '<leader>e', group = '[E]xit to netrw' },
       },
     },
   },
