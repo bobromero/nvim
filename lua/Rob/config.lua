@@ -1,12 +1,6 @@
+require 'Rob.keymap'
+require 'Rob.colorscheme'
 vim.opt.relativenumber = true
-
-vim.keymap.set('n', '<leader>e', ':Ex<CR>')
-
-vim.keymap.set('n', '<leader>l', '<End>')
-vim.keymap.set('n', '<leader>h', '0')
-
-vim.keymap.set('v', '<leader>l', '<End>')
-vim.keymap.set('v', '<leader>h', '0')
 
 vim.api.nvim_set_hl(0, 'Normal', { bg = 'none' })
 vim.api.nvim_set_hl(0, 'NormalFloat', { bg = 'none' })
@@ -18,7 +12,3 @@ vim.api.nvim_set_hl(0, 'LineNrBelow', { fg = 'white', bold = true })
 
 vim.api.nvim_set_hl(0, 'Comment', { fg = '#a8a8a8' })
 vim.api.nvim_set_hl(0, '@comment', { link = 'Comment' })
--- code
-vim.keymap.set('i', '<C-s>', '<Esc> :LspRestart<CR> :w<CR>')
-vim.keymap.set('n', '<C-s>', ':LspRestart<CR> :w<CR>')
-vim.keymap.set('i', '<C-c>', '<Esc> :LspRestart<CR>')
