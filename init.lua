@@ -304,7 +304,6 @@ require('lazy').setup({
         { '<leader>s', group = '[S]earch' },
         { '<leader>t', group = '[T]oggle' },
         { '<leader>H', group = 'Git [H]unk', mode = { 'n', 'v' } },
-        { '<leader>e', group = '[E]xit to netrw' },
       },
     },
   },
