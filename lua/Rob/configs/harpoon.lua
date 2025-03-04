@@ -1,0 +1,35 @@
+local harpoon = require 'harpoon'
+
+-- REQUIRED
+harpoon:setup()
+-- REQUIRED
+vim.keymap.set('n', '<leader>a', '', { desc = 'Harpoon commands' })
+vim.keymap.set('n', '<leader>aa', function()
+  harpoon:list():add()
+end, { desc = 'Add file to harpoon' })
+vim.keymap.set('n', '<leader>ad', function()
+  harpoon:list():clear()
+end, { desc = 'Clear the harpoon file list' })
+vim.keymap.set('n', '<leader>al', function()
+  harpoon.ui:toggle_quick_menu(harpoon:list())
+end, { desc = 'List harpoon files' })
+-- Toggle previous & next buffers stored within Harpoon list
+vim.keymap.set('n', '<leader>am', function()
+  harpoon:list():prev()
+end, { desc = 'Prev file in harpoon' })
+vim.keymap.set('n', '<leader>ap', function()
+  harpoon:list():next()
+end, { desc = 'Next file in harpoon' })
+
+vim.keymap.set('n', '<leader>a1', function()
+  harpoon:list():select(1)
+end, { desc = 'File 1' })
+vim.keymap.set('n', '<leader>a2', function()
+  harpoon:list():select(2)
+end, { desc = 'File 2' })
+vim.keymap.set('n', '<leader>a3', function()
+  harpoon:list():select(3)
+end, { desc = 'File 3' })
+vim.keymap.set('n', '<leader>a4', function()
+  harpoon:list():select(4)
+end, { desc = 'File 4' })
