@@ -14,10 +14,10 @@ vim.keymap.set('n', '<leader>al', function()
   harpoon.ui:toggle_quick_menu(harpoon:list())
 end, { desc = 'List harpoon files' })
 -- Toggle previous & next buffers stored within Harpoon list
-vim.keymap.set('n', '<leader>am', function()
+vim.keymap.set('n', '<leader>ap', function()
   harpoon:list():prev()
 end, { desc = 'Prev file in harpoon' })
-vim.keymap.set('n', '<leader>ap', function()
+vim.keymap.set('n', '<leader>an', function()
   harpoon:list():next()
 end, { desc = 'Next file in harpoon' })
 
