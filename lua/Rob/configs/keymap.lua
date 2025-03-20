@@ -13,3 +13,9 @@ vim.keymap.set('n', '<leader>h', '0', { desc = 'Move to the beginning of the lin
 vim.keymap.set('i', '<C-s>', '<Esc> :LspRestart<CR> :w<CR>')
 vim.keymap.set('n', '<C-s>', ':LspRestart<CR> :w<CR>')
 vim.keymap.set('i', '<C-c>', '<Esc> :LspRestart<CR>')
+
+vim.keymap.set('i', '<C-J>', 'copilot#Accept("\\<CR>")', {
+  expr = true,
+  replace_keycodes = false,
+})
+vim.g.copilot_no_tab_map = true
