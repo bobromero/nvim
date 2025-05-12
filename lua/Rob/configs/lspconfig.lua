@@ -12,6 +12,6 @@ vim.api.nvim_create_autocmd('BufWritePost', {
 vim.api.nvim_create_autocmd('BufWritePost', {
   group = 'AutoFormat',
   callback = function()
-    vim.cmd 'LspRestart'
+    -- vim.cmd 'LspRestart'
   end,
 })
